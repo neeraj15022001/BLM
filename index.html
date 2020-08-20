@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="nav-bar-container" id="navbar">
+    <ul class="nav-bar">
+      <li><img src="./website-logo/FINAL.png" alt="BLM" id="website-logo" height="86px" width="86px"></li>
+      <li>Donate</li>
+      <li>Resources</li>
+      <li>Connect With Us</li>
+      <li>Updates</li>
+      <li>Organize</li>
+      <li><a href="#" id="mainheading">Who are we</a></li>
+    </ul>
+  </div>
+
+  <div class="landing-image">
+    <img src="./images/Black_Live_Matters.jpg" alt="Black Live Matters" height="auto" width="100%">
+  </div>
+
+  <div class="quotes"> 
+    <q>For once, Don't Do it.</q><br><br>
+    <cite>~ Nike</cite>
+  </div>
+
+  <div class="margin">
+    <section class="parallex">
+      <div class="parallex-inner">
+        <div class="parallex-inner-inner">
+          <h4>About</h4>
+          <p>Black Lives Matter (BLM) is a decentralized movement advocating for non-violent civil disobedience in protest against incidents of police brutality and all racially motivated violence against Black people. While Black Lives Matter can primarily be understood as a decentralized social movement, an organization known simply as Black Lives Matter[a] exists as a decentralized network with about 16 chapters in the United States and Canada. The broader movement and its related organizations typically advocate against police violence towards black people, as well as for various other policy changes considered to be related to black liberation.</p>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-inner"></div>
+
+    <div class="subscribe-letter">
+      <h3>Subscribe to our newsletter</h3>
+      <form>
+        <input type="text" placeholder="NAME" class="fields"><br>
+        <input type="email" placeholder="EMAIL-ADDRESS" class="fields"><br>
+        <input type="submit" id="submit-button">
+      </form>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <h4>BLACK LIVES MATTER. FOR EDUCATIONAL PURPOSES.</h4>
+  </div>
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
+        document.getElementById("navbar").style.backgroundColor = "#ffa008";
+        document.getElementById('navbar').style.transition = "ease-in-out 0.3s";
+        document.getElementById('mainheading').style.color = "black";
+      } else {
+        document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0)";
+        document.getElementById('mainheading').style.color = "#ffa008";
+      }
+    }
+    </script>
+</body>
+</html>

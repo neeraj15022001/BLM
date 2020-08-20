@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/connect.css">
+</head>
+<body>
+  <div class="nav-bar-container" id="navbar">
+    <ul class="nav-bar">
+      <li><img src="./website-logo/FINAL.png" alt="BLM" id="website-logo" height="86px" width="86px"></li>
+      <li>Donate</li>
+      <li>Resources</li>
+      <li>Connect With Us</li>
+      <li>Updates</li>
+      <li>Organize</li>
+      <li><a href="#" id="mainheading">Who are we</a></li>
+    </ul>
+  </div>
+
+<div class="landing-image">
+	<img src="./images/Updates.png" alt="Black Live Matters" height="auto" width="100%">
+</div>
+<div class="policy">
+	<h1>Press Policy</h1>
+	<p>We make every effort to respond to media requests within 24 hours, usually less. Our members have their own voices and can speak for themselves as individuals, however, official Black Lives Matter statements must come from chapter or Network designees. We are also able to connect media with many of the families and loved ones of those killed by police.</p>
+	<button>CONTACT</button>
+</div>
+
+<div class="forum">
+
+	<div classs="forum-img" id="abc">
+		<img src="images/form.svg" width="50%" height="auto" style="display: inline;">
+	</div>
+
+	<div class="inner-forum" id="bcd">
+		<h3>Please Complete the form below</h3>
+	<form>
+		<label for="name">Name*</label>
+		<input type="text" name="name" placeholder="NAME">
+		<br>
+		<label for="email">Email Address*</label>
+		<input type="email" name="email" placeholder="EMAIL"><br>
+		<label for=abc>Who are you?</label>
+		<select name="abc" ><br>
+			<option>Press & Media</option>
+			<option>Community Member</option>
+			<option>Researcher</option>
+			<option>Community Organizer</option>
+			<option>Student</option>
+		</select><br>
+		<label for="website">Website</label>
+		<input type="text" name="website" placeholder="WEBSITE"><br>
+		<label for="subject">Subject*</label>
+		<input type="text" name="subject" placeholder="SUBJECT"><br>
+		<label>Message*</label>
+		<textarea></textarea>
+		<input type="submit" id="submit-button">
+
+	</form>	
+
+
+	<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
+        document.getElementById("navbar").style.backgroundColor = "#ffa008";
+        document.getElementById('navbar').style.transition = "ease-in-out 0.3s";
+        document.getElementById('mainheading').style.color = "black";
+      } else {
+        document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0)";
+        document.getElementById('mainheading').style.color = "#ffa008";
+      }
+    }
+    </script>
+</body>
+</html>

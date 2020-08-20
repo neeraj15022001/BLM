@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>History</title>
+	<link rel="stylesheet" href="./css/history.css">
+	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</head>
+<body>
+
+	<div class="nav-bar-container" id="navbar">
+    <ul class="nav-bar">
+      <li><img src="./website-logo/FINAL.png" alt="BLM" id="website-logo" height="86px" width="86px"></li>
+      <li>Donate</li>
+      <li>Resources</li>
+      <li>Connect With Us</li>
+      <li>Updates</li>
+      <li>Organize</li>
+      <li><a href="#" id="mainheading">Who are we</a></li>
+    </ul>
+  </div>
+
+	<!-- opening div about george -->
+<div class="container">
+		<div class="image-container">
+			<img src="images/Faces-of-George-Floyd-by-Isaac-Klotz-1024x1029.png" width="100%">
+		</div>
+		<div class="text-container">
+		<h1>George Floyd,2020</h1>
+		<p>On May 25, 2020, George Floyd, a 46-year-old black American man, was killed in Minneapolis, Minnesota, during an arrest for allegedly using a counterfeit bill.[1] Derek Chauvin, a white police officer, knelt on Floyd's neck for almost eight minutes[note 1] while Floyd was handcuffed and lying face down, begging for his life and repeatedly saying "I can't breathe".
+			<br>
+			The reason for the death was not the crime but the colour of skin! 
+			The worst thing on the humanitarian ground. 
+		</p>
+		</div>
+
+		<div class="down-arrow">
+			<a href="#violence-against-african" onclick="show()"><img src="./images/icons8-chevron-down-64 (1).png"></a>
+		</div>
+</div>
+
+<!-- History of BLM -->
+<div class="container" id="violence-against-african">
+	<div class="text-container">
+		<h1>Violence against Black lives</h1>
+		<p>
+			There is a larger context and history of African American men and boys who were killed at the hands of the police, many of whom, like George Floyd (2020), were unarmed. Since 2014, other high-profile deaths include Tamir Rice (2014), Laquan McDonald (2014), John Crawford (2014) Freddie Gray (2015), Walter Scott (2015), Alton Sterling (2016), Philando Castile (2016), Terence Crutcher (2016), Antwon Rose (2018) and others. Black women and girls are also targets of police violence, a reality that sparked the "Say Her Name" movement to highlight how this violence often goes unnoticed. Women who have died as a result of police interactions include Sandra Bland (2015), Deborah Danner (2016), Atatiana Jefferson (2019) and Breonna Taylor (2020).
+		</p>
+	</div>
+</div>
+
+<div class="margin">
+	<section class="parallex">
+		<div class="parallex-inner">
+			<div class="parallex-inner-inner">
+				<p> </p>
+			</div>
+		</section>
+	</div>
+</div>
+
+<!-- formation of BLM -->
+<div>
+	<!-- <div class="image-container-foundation">
+		<img src="images/founder.jpg" width="100%">
+	</div> -->
+	<div class="text-container">
+		<h1>#BlackLivesMatter, 2013</h1>
+		<p>
+			In 2013, three radical Black organizers — Alicia Garza, Patrisse Cullors, and Opal Tometi — created a Black-centered political will and movement building project called #BlackLivesMatter. It was in response to the acquittal of Trayvon Martin’s murderer, George Zimmerman.The project is now a member-led global network of more than 40 chapters. Our members organize and build local power to intervene in violence inflicted on Black communities by the state and vigilantes.
+		</p>
+	</div>
+</div>
+
+<!-- BLM 2020 movement -->
+<div>
+	<div class="image-container-foundation">
+		<img src="images/2.jpg" width="100%">
+	</div>
+	<div class="text-container">
+		<h1>BLM’s #WhatMatters2020</h1>
+		<p>
+			BLM’s #WhatMatters2020 is a campaign aimed to maximize the impact of the BLM movement by galvanizing BLM supporters and allies to the polls in the 2020 U.S Presidential Election to build collective power and ensure candidates are held accountable for the issues that systematically and disproportionately impact Black and under-served communities across the nation.<br>
+			BLM’s #WhatMatters2020 will focus on issues concerning racial injustice, police brutality, criminal justice reform, Black immigration, economic injustice, LGBTQIA+ and human rights, environmental injustice, access to healthcare, access to quality education, and voting rights and suppression.<br>
+			This initiative will inspire and motivate people to ask themselves and their candidates are you really addressing What Matters in 2020?
+		</p>
+	</div>
+</div>
+
+<!-- policy solutions -->
+<div>
+	<div>
+		<img src="">
+	</div>
+	<div class="text-container">
+		<h1>From Protests to Policy Solutions</h1>
+		<p>
+			Ongoing local and national protests and other actions—often sparked by the deaths of other unarmed African Americans—have brought the Black Lives Matter movement to the public consciousness and conversation. Black Lives activists released “Campaign Zero,” which includes ten policy solutions.<br>
+			Students will learn about the history of the Black Lives Matter movement and how it evolved.
+			Students will analyze the controversy around politicians and other people using the term “All lives matter” instead of or in addition to “Black lives matter.”<br>
+			Black Lives Matter continues to pursue policy solutions beyond the events of Ferguson.
+		</p>
+	</div>
+</div>
+<script src="./js/history.js"></script>
+<script>
+	// When the user scrolls down 20px from the top of the document, slide down the navbar
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+		if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
+			document.getElementById("navbar").style.backgroundColor = "#ffa008";
+			document.getElementById('navbar').style.transition = "ease-in-out 0.3s";
+			document.getElementById('mainheading').style.color = "black";
+		} else {
+			document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0)";
+			document.getElementById('mainheading').style.color = "#ffa008";
+		}
+	}
+	</script>
+</body>
+</html>
