@@ -9,13 +9,12 @@
 <body>
   <div class="nav-bar-container" id="navbar">
     <ul class="nav-bar">
-      <li><img src="./website-logo/FINAL.png" alt="BLM" id="website-logo" height="86px" width="86px"></li>
-      <li>Donate</li>
-      <li>Resources</li>
-      <li>Connect With Us</li>
-      <li>Updates</li>
-      <li>Organize</li>
-      <li><a href="#" id="mainheading">Who are we</a></li>
+      <li><a href="index.html"><img src="./website-logo/FINAL.png" alt="BLM" id="website-logo" height="86px" width="86px"></a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="connect.html">Connect With Us</a></li>
+      <li><a href="update.html">Updates</a></li>
+      <li><a href="history.html">BLM</a></li>
+      <li><a href="index.html" id="mainheading">Who are we</a></li>
     </ul>
   </div>
 
@@ -32,7 +31,7 @@
     <section class="parallex">
       <div class="parallex-inner">
         <div class="parallex-inner-inner">
-          <h4>About</h4>
+          <h4 id="about">About</h4>
           <p>Black Lives Matter (BLM) is a decentralized movement advocating for non-violent civil disobedience in protest against incidents of police brutality and all racially motivated violence against Black people. While Black Lives Matter can primarily be understood as a decentralized social movement, an organization known simply as Black Lives Matter[a] exists as a decentralized network with about 16 chapters in the United States and Canada. The broader movement and its related organizations typically advocate against police violence towards black people, as well as for various other policy changes considered to be related to black liberation.</p>
           </div>
           
@@ -40,9 +39,41 @@
       </section>
     </div>
   </div>
-
+<div class="quotes">
+  <q>The cost of liberty is less than the price of repression.</q><br><br>
+  <cite>~ W.E.B. Du Bois</cite>
+</div>
   <div class="footer">
-    <div class="footer-inner"></div>
+    <div class="footer-inner">
+      <div class="footer-inner-element">
+        <ul>
+          <h4>ABOUT</h4>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#about">Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-inner-element">
+        <ul>
+          <h4>#BLM</h4>
+          <li><a href="history.html">About</a></li>
+          <li><a href="history.html">Policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-inner-element">
+        <ul>
+          <h4>UPDATES</h4>
+          <li><a href="update.html">Latest</a></li>
+          <li><a href="update.html">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-inner-element">
+        <ul>
+          <h4>DONATE</h4>
+          <li><a href="donate.html">Help</a></li>
+          <li><a href="https://secure.actblue.com/content/fineprint">T&C's</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="subscribe-letter">
       <h3>Subscribe to our newsletter</h3>
@@ -51,6 +82,21 @@
         <input type="email" placeholder="EMAIL-ADDRESS" class="fields"><br>
         <input type="submit" id="submit-button">
       </form>
+    </div>
+    
+    <div class="socialmedia">
+      <div>
+        <h3>We are Social</h3>
+        <div class="social-container">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACFElEQVRIidWUPW8TQRBA3+xZ8sa4IhS0IOUHgAxyElGAQoXhD0RB51TQpoSURHSkQaA08ckU/IDQAQUYJwUfooEqQERFEXdgr1Huhia27+I7kzhVprudnfdmb1cDJz0kK6H1QokwnMaYwkhCFLURb1P89sdDCbSWn8JIgDJzxGabeOrLQnc7U6C1/BQiW8DkEeG9aOFpOS4xibRI7RhwgElCeaY6aLwv0HqhBMweGRnJLEauxFbK1AoXhgSE4XQ2RTZQrmJcEeOKCNdAXgCQwxBq8i7NgDUQGDmdQb8nfucWyk8iO09k5xF2xO/cBJaJtIHwNtmPnBkWRGlPVjbEdw81sFUMX4A1YI2Ir1qzvvhupX+SeEQpd5Aaqo903Z4HngA2lrEIT7VuzxHp6ijEaMEp9wFPrx+ADyQhc6h7P74AQEVHVCv57Gnwf0HHXiLiFeBSsg7hNX9taXyBypIsuu8odw9IHMIdue1+YGRpFCIXUylDP0MrGtj74rsVrds3hMztJ16K73Y0sMugN1La7pMGArSVMVwfaDBRZk9XKbrnAPy2lzWYeJwKB1DdHRaotwVR+jnRCoYKbdvrEIaPG9uea0J3sBVgf543s6sOHQ2p/vnc+0hesqc+0DoGfBe0Gl9ICGShu42nZeDdGPAGaFn87rcEM2u3rhcu4oUzqJxF448hUb2H6C9Cb1MW25/GaOoExD9ELriSpVlfoAAAAABJRU5ErkJggg==">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABkklEQVRIie2Rv0sbYRiAn/dLMOdB/wClDl2lk7h0dK6TikPR5ELlEER0qIgIktVRBDEgGhURdOjk3+AidhGpUyn+wEXEUpMLnPc6mNPEE2NUFMRnurvvvefhvYN3XhsJL3Qx0Y5KFmh8ovMI1BWnuAFgyg7SzyDnymHc8OYmkCx2ASng5PFuOUN0GLvQEQ2s8EEcbwmNfQZWa3ezzoU0S6o4BdRHA761pzkrKenzY3G8byhtCHsPUB+i0ikpr1u+5490MdFOwdq56ZbQnKWlRxv4OiB93l9do55zaxRhDKi7JfZBZrAL49LNf122GwiCSZReAHE8qdzgGv1KnF1dsDKc4kvay6BBK7BZNrONMV/EKQyxS15zlstF8DuUV365yAYVsV+YmCvJ/JZmMHxK9APwpzgrGQKdt1swQRZojYhLG1QJABAAc8S9EenhH4BmsamzJhB+ALG7XqolEHKAmkGMr6iZBpruGw4D8SrScj4iwU/0jt92D7VNP4K3FTh4Ru9+NCDqlh88Sa7qVh9756W4BMG+iux7uOY/AAAAAElFTkSuQmCC">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAB6ElEQVRIie2Vv08UQRTHP2+4HLuJWBETKIACowZDgVaYQIe/Gmoi3BJN/ANsiRZaGP8DjBHuCk1WYkUinYbCQgqNwRCNaDQ22KnkbpY791ncKbswnAfb8u3evPc+3zc7mVk41H8kyUBL3igxKoFdbtakc+3HEbkFjAFHQddQZvkS3aff7+a3XpCCfZAy0EcdnWxV14EtTG5Apja/O+EP/WGMPquDd837FvQk6DsJoiEA8y9XrV5uNHUS155qiL97cjyMPnbDAXQQyIOc0qJ3LW0QS1ei8hxlb1lL+dOpfpM/D/S44Smt02ZDgFxi8euOorPE5rXOty+CCSF+BTLQAhyMXJIr/ITkGYQcoeKtovS2BNlbmxLYjr/B9g7K3gqgGeEAG8lg+wxEIqAvO1/W3AZwJzscEJ47DaRQWUC4mxGvEC86DQCImUV4n8FgSQrRh70NDKMoJw4IV5R7OxdTBlKwRZSbQO0ABkWZti+aGgDItL2NxkMIL/cB/0Qtf8OVEACd8/oQriJ0o3IM9AzQ5Wpw6BuGEZmyn13JXMNmBJipX7N93bUV2nRCJiMnHBqfSAJbQggA5xPt0C9ghl47LJPRx2aF6R9OiE/ZH0f0Isggqj3Un+YKsAH6BpElrH0i1/nR4jCHaq4/TzGUCpyeb2sAAAAASUVORK5CYII=">
+        </div>
+
+      </div>
+      <div>
+        
+      </div>
     </div>
   </div>
 

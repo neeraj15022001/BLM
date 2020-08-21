@@ -35,15 +35,20 @@ ul.nav-bar li {
 ul.nav-bar li:nth-child(2) {
   margin-right: 50px;
 }
-ul-nav-bar li a {
-  color:#ffa008;
+ul.nav-bar li a {
+  color:white;
   text-decoration: none;
+  font-weight: bold;
 }
-ul.nav-bar li:nth-child(7) a{
+ul.nav-bar li:nth-child(6) a{
   color:#ffa008;
   text-decoration:none;
   font-weight: bold;
 }
+ul.nav-bar li:hover{
+  transform: scale(1.1);
+}
+
 .landing-image img {
   display: block;
   position: relative;
@@ -103,14 +108,16 @@ ul.nav-bar li:nth-child(7) a{
 }
 .footer {
   position: relative;
-  margin-top: 100px;
   background-color: #121111;
   width: 100%;
   display:inline-block;
   /* padding:20px; */
 }
+.footer-inner-elements {
+  display: flex;
+}
 .subscribe-letter {
-  width: 30%;
+  width: 32%;
   float: right;
   border-left:1px solid #ffa008;
   padding-left: 20px;
@@ -148,6 +155,107 @@ ul.nav-bar li:nth-child(7) a{
 .copyright h4 {
   margin: 0;
 }
+.footer-inner{
+    width: 55%;
+  float: left;
+  padding-left: 20px;
+  display: inline;
+  margin: 20px;
+}
+.footer-inner-element{
+  float: left;
+   display: inline-block;
+   width: 25%;
+   line-height: 2;
+}
+.footer-inner-element ul li{
+    list-style-type: none;
+    text-transform: none;
+}
+.footer-inner-element ul li a{
+   text-decoration: none;
+   color:white;
+}
+.socialmedia{
+  width: 100%;
+  float: right;
+  text-align: center;
+}
+.socialmedia h3 {
+  color:#ffa008;
+  padding:5px 0px;
+  font-size:3.5vw; 
+}
+.social-container img {
+  box-shadow: 0px 0px 10px 5px grey;
+  padding:10px 10px;
+  border-radius: 50%;
+  margin:20px 5px;
+}
 
+/* landing */
 
-
+@media only screen and (max-width: 600px) {
+  
+  .quotes{
+    margin: 20px 0px;
+  }
+  .parallex-inner{
+    padding:35px 0px;
+  }
+  .parallex-inner p{
+    margin-top: 10px;
+    font-size:2vw;
+  }
+  .quotes cite{
+    font-size: 1.5vw;
+  }
+  .footer-inner{
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+  }
+  .footer-inner-element{
+    text-align: center;
+    width: 24%;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .subscribe-letter{
+    float: none;
+    width: 90%;
+    border-left: none;
+    padding-left: 0px;
+  }
+  .subscribe-letter input{
+    display: block;
+    margin: auto;
+  }
+  .subscribe-letter h3{
+    margin-bottom: 10px;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .footer-inner-element h4{
+    color:#ffa008;
+    font-size: 3.5vw;
+  }
+  .copyright h4{
+    font-size: 3vw;
+  }
+  .footer-inner-element ul li{
+    font-size:2.8vw;
+  }
+  #submit-button{
+    margin-top:0;
+  }
+.nav-bar li {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+  .nav-bar li:nth-child(1) {
+    display: none;
+    margin: 0;
+  }
+}

@@ -18,7 +18,6 @@ div.nav-bar-container {
   width: 100%;
   position: fixed;
   padding-top:10px;
-  background-color: black;
 }
 ul.nav-bar li {
   list-style:none;
@@ -36,15 +35,20 @@ ul.nav-bar li {
 ul.nav-bar li:nth-child(2) {
   margin-right: 50px;
 }
-ul-nav-bar li a {
-  color:#ffa008;
+ul.nav-bar li a {
+  color:white;
   text-decoration: none;
+  font-weight: bold;
 }
-ul.nav-bar li:nth-child(7) a{
+ul.nav-bar li:nth-child(6) a{
   color:#ffa008;
   text-decoration:none;
   font-weight: bold;
 }
+ul.nav-bar li:hover{
+  transform: scale(1.1);
+}
+
 .landing-image img {
   display: block;
   /* position: relative; */
@@ -150,4 +154,51 @@ textarea {
   top: 0;
   left: 0;
   z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+    #abc img{
+      width: 0px;
+      height:0px;
+    }
+    .forum-img{
+      width: 0%;
+      float: none;
+      height:0px;
+    }
+    .inner-forum{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    .policy h1{
+      padding:10px 0px;
+      font-size: 6vw;
+    }
+    .policy p{
+      font-size: 4vw;
+    }
+    .policy button{
+      margin:15px 0px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .policy{
+      padding-top: 30px;
+    }
+    .nav-bar{
+      height: 100px;
+
+      margin: auto;
+    }
+    .nav-bar li {
+      font-size: 2vw;
+      display: inline-block;
+    }
+    .nav-bar li:nth-child(1)
+    {
+      display: none;
+    }
+    #submit-button {
+      margin-left: 48%;
+    }
 }

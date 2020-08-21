@@ -1,8 +1,7 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +18,6 @@ div.nav-bar-container {
   width: 100%;
   position: fixed;
   padding-top:10px;
-  /* background-color: black; */
 }
 ul.nav-bar li {
   list-style:none;
@@ -37,15 +35,20 @@ ul.nav-bar li {
 ul.nav-bar li:nth-child(2) {
   margin-right: 50px;
 }
-ul-nav-bar li a {
-  color:#ffa008;
+ul.nav-bar li a {
+  color:white;
   text-decoration: none;
+  font-weight: bold;
 }
-ul.nav-bar li:nth-child(7) a{
+ul.nav-bar li:nth-child(6) a{
   color:#ffa008;
   text-decoration:none;
   font-weight: bold;
 }
+ul.nav-bar li:hover{
+  transform: scale(1.1);
+}
+
 .landing-image img {
   display: block;
   position: relative;
@@ -70,4 +73,15 @@ ul.nav-bar li:nth-child(7) a{
   display: inline-block;
   float:right;
   padding:20px;
+ }
+
+ @media only screen and (max-width: 600px){
+.nav-bar li {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+  .nav-bar li:nth-child(1) {
+    display: none;
+    margin: 0;
+  }
  }

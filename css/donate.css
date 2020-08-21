@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  height: auto;
+}
+div.nav-bar-container {
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  padding-top:10px;
+  background-color: #ffa008;
+}
+ul.nav-bar li {
+  list-style:none;
+  margin-top:30px;  
+}
+ul.nav-bar li:nth-child(1) {
+  float: left;
+  margin-top: 0px;
+}
+ul.nav-bar li {
+  float: right;
+  padding:5px;
+  margin-left: 20px;
+}
+ul.nav-bar li:nth-child(2) {
+  margin-right: 50px;
+}
+ul.nav-bar li a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul.nav-bar li:nth-child(6) a{
+  color:black;
+  text-decoration:none;
+  font-weight: bold;
+}
+ul.nav-bar li:hover{
+  transform: scale(1.1);
+}
+
+.parent{
+    width: 100%;
+    display: inline-block;
+}
+.image{
+    width: 50%;
+    float: left;
+    margin-top: 200px;
+}
+.fund{
+    width: 50%;
+    float: right;
+    background-color:black;
+    margin-top:130px;
+
+}
+.fund h1{
+    font-size: 2.5vw;
+  color:#ffa008;
+  text-align:center;
+  padding:30px 0px;
+}
+.paragraph {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1vw;
+  padding:10px 20px;
+
+}
+.fund h3{
+  font-size: 2vw;
+  padding:30px 0px;
+color:#ffa008;
+text-align:center;
+}
+.contribution-rules h4 {
+  color:#ffa008;
+  font-weight: bold;
+  font-size: 2.5vw;
+  padding:30px 0px;
+  text-align:center;
+}
+.contribution-rules h3 {
+  font-size: 2vw;
+  padding:30px 0px;
+color:#ffa008;
+text-align:center;
+}
+.contribution-rules h3 a {
+  text-decoration: none;
+}
+.contribution-rules ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/* Payment csrd start here */
+
+.container {
+  width:80%;
+  border:1px solid grey;
+  padding:30px 20px;
+  margin:auto;
+  background-image: linear-gradient(225deg, #00286F, #008DD8);
+  border-radius: 20px;
+  border:none;
+}
+.form {
+  width:100%;
+  display: block;
+  margin:auto;
+}
+label {
+  display: inline-block;
+  width:40%;
+  margin-bottom: 20px;
+  color:white;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size:1.5vw;
+}
+input {
+  width:40%;
+  margin-bottom: 20px;
+  padding:10px;
+  border:none;
+}
+button {
+  
+  display:block;
+  margin: auto;
+  margin-top: 20px;
+  border:none;
+  color:black;
+  background-color:#ffa008;
+  padding:10px;
+  width:30%;
+  font-size:1.5vw;
+  margin-bottom:20px;
+}
+.branding {
+  display: inline-block;
+  widows: 100%;;
+}
+.branding span {
+  color:white;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: sans-serif;
+  padding-left: 20px;
+  float: right;
+}
+
+
+/* auto */
+@media only screen and (max-width: 600px) {
+  .image{
+    width: 0%;
+    margin:0px;
+  }
+  .fund{
+    width: 100%;
+  }
+  .contribution-rules h4{
+    padding:10px;
+  }
+  .contribution-rules ul li{
+    margin: 0px;
+  }
+  .paragraph{
+    font-size:2vw;
+  }
+  .contribution-rules h3{
+    font-size: 2vw;
+  }
+  .fund h3{
+    padding: 10px;
+    font-size: 2.5vw;
+  }
+  .fund h1{
+    padding: 10px 0px;
+
+  }
+.nav-bar li {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+  .nav-bar li:nth-child(1) {
+    display: none;
+    margin: 0;
+  }
+}
